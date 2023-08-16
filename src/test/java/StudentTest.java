@@ -15,6 +15,7 @@ public class StudentTest {
     @Before
     public void setup() {
         actualStudent = new Student(12345, "julissa");
+        emptyArrayList = new ArrayList<>();
     }
 
     @Test
@@ -28,7 +29,7 @@ public class StudentTest {
     public void testStudentGetters() {
         assertEquals(actualStudent.getId(), 12345);
         assertEquals(actualStudent.getName(), "julissa");
-        assertEquals(actualStudent.getGrades().emptyArrayList());
+        assertEquals(actualStudent.getGrades(), emptyArrayList);
     }
 
     @Test
